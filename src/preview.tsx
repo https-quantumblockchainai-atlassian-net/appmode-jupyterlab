@@ -79,7 +79,7 @@ export class AppmodePreview extends DocumentWidget<IFrame, INotebookModel> {
     const { getAppmodeUrl, context, renderOnSave } = options;
 
     this.content.url = getAppmodeUrl(context.path);
-    this.content.title.icon = APPMODE_ICON_CLASS;
+    this.content.title.iconClass = APPMODE_ICON_CLASS;
 
     this.renderOnSave = renderOnSave;
 
@@ -148,18 +148,18 @@ export class AppmodePreview extends DocumentWidget<IFrame, INotebookModel> {
   /**
    * Get whether the preview reloads when the context is saved.
    */
-  get renderOnSave(): boolean {
+  get renderOnSave(): boolean | undefined {
     return this._renderOnSave;
   }
 
   /**
    * Set whether the preview reloads when the context is saved.
    */
-  set renderOnSave(renderOnSave: boolean) {
+  set renderOnSave(renderOnSave: boolean | undefined) {
     this._renderOnSave = renderOnSave;
   }
 
-  private _renderOnSave: boolean;
+  private _renderOnSave: boolean | undefined;
 }
 
 /**
