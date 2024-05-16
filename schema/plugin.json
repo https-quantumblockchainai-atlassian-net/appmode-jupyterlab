@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "appmode-jupyterlab",
+  "description": "appmode-jupyterlab settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
