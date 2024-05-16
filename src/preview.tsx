@@ -55,19 +55,19 @@ export class AppmodePreview extends DocumentWidget<IFrame, INotebookModel> {
 
       switch (event.data?.level) {
         case 'debug':
-          console.debug(...event.data?.msg);
+          console.debug(...(event.data?.msg || {}));
           break;
 
         case 'info':
-          console.info(...event.data?.msg);
+          console.debug(...(event.data?.msg || {}));
           break;
 
         case 'warn':
-          console.warn(...event.data?.msg);
+          console.debug(...(event.data?.msg || {}));
           break;
 
         case 'error':
-          console.error(...event.data?.msg);
+          console.debug(...(event.data?.msg || {}));
           break;
 
         default:
