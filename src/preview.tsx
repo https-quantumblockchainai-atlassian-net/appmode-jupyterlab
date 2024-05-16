@@ -2,13 +2,13 @@ import {
   IFrame,
   ToolbarButton,
   ReactWidget,
-  IWidgetTracker,
+  IWidgetTracker
 } from '@jupyterlab/apputils';
 
 import {
   ABCWidgetFactory,
   DocumentRegistry,
-  DocumentWidget,
+  DocumentWidget
 } from '@jupyterlab/docregistry';
 
 import { INotebookModel } from '@jupyterlab/notebook';
@@ -47,7 +47,7 @@ export class AppmodePreview extends DocumentWidget<IFrame, INotebookModel> {
   constructor(options: AppmodePreview.IOptions) {
     super({
       ...options,
-      content: new IFrame({ sandbox: ['allow-same-origin', 'allow-scripts'] }),
+      content: new IFrame({ sandbox: ['allow-same-origin', 'allow-scripts'] })
     });
 
     window.onmessage = (event: any) => {
@@ -92,7 +92,7 @@ export class AppmodePreview extends DocumentWidget<IFrame, INotebookModel> {
       tooltip: 'Reload Preview',
       onClick: () => {
         this.reload();
-      },
+      }
     });
 
     const renderOnSaveCheckbox = ReactWidget.create(
@@ -202,7 +202,7 @@ export class AppmodePreviewFactory extends ABCWidgetFactory<
     return new AppmodePreview({
       context,
       getAppmodeUrl: this.getAppmodeUrl,
-      renderOnSave: this.defaultRenderOnSave,
+      renderOnSave: this.defaultRenderOnSave
     });
   }
 }
