@@ -10,12 +10,12 @@ This extension is created from the modification of the voila JupyterLab extensio
 
 ## Requirements
 
-* JupyterLab >= 2.0
+* JupyterLab >= 4.0
 
 ## Install
 
 ```bash
-jupyter labextension install @osscar/appmode-jupyterlab
+pip install appmode-jupyterlab
 ```
 
 ## Contributing
