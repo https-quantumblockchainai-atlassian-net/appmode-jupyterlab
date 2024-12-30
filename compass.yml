@@ -1,0 +1,13 @@
+name: appmode-jupyterlab
+id: ari:cloud:compass:2261fd15-e484-47df-a3c1-3945f31f5015:component/e50c4fd7-4bca-45fe-87b2-62835b87da68/5313351d-63d3-4b58-9d6e-14215ea5e3b4
+description: This is the JupyterLab extension for Appmode.
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links: []
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
