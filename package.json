@@ -62,7 +62,7 @@
         "@jupyterlab/notebook": "^4.0.0",
         "@jupyterlab/settingregistry": "^4.0.0",
         "react": "~18.2.0",
-        "react-dom": "~18.2.0"
+        "react-dom": "~19.0.0"
     },
     "devDependencies": {
         "@jupyterlab/builder": "^4.0.0",
